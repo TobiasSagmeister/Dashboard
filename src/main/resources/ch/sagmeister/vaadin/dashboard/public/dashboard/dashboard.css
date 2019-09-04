@@ -1,0 +1,96 @@
+.v-dashboard {
+  overflow-x: hidden;
+  pointer-events: auto !important;
+}
+.v-dashboard .v-dashboard-placeholder {
+  position: absolute;
+  box-sizing: border-box;
+  border: 1px dashed #a1a1a1;
+  pointer-events: none;
+}
+.v-dashboard .v-dashboard-content {
+  position: relative;
+}
+.v-dashboard .v-dashboard-content .v-dashboard-widget {
+  position: absolute;
+  box-shadow: none;
+  border-radius: 0;
+  box-sizing: border-box;
+}
+.v-dashboard .v-dashboard-content .v-dashboard-widget:not(.active) {
+  transition: top 0.2s ease 0s;
+  pointer-events: none;
+  opacity: 0.5;
+}
+.v-dashboard .v-dashboard-content .v-dashboard-widget:hover .resize-overlay {
+  display: block;
+}
+.v-dashboard .v-dashboard-content .v-dashboard-widget.v-draggable {
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  -webkit-user-select: none !important;
+  user-select: none !important;
+}
+.v-dashboard .v-dashboard-content .v-dashboard-widget .resize-overlay {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: absolute;
+  z-index: 30;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+.v-dashboard .v-dashboard-content .v-dashboard-widget .resize-overlay .resize-handle {
+  position: absolute;
+  pointer-events: auto;
+}
+.v-dashboard .v-dashboard-content .v-dashboard-widget .resize-overlay .resize-handle.resize-handle-w {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 30px;
+  cursor: w-resize;
+}
+.v-dashboard .v-dashboard-content .v-dashboard-widget .resize-overlay .resize-handle.resize-handle-e {
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 30px;
+  cursor: e-resize;
+}
+.v-dashboard .v-dashboard-content .v-dashboard-widget .resize-overlay .resize-handle.resize-handle-s {
+  left: 0;
+  bottom: 0;
+  height: 30px;
+  width: 100%;
+  cursor: s-resize;
+}
+.v-dashboard .v-dashboard-content .v-dashboard-widget .resize-overlay .resize-handle.resize-handle-se {
+  bottom: 0;
+  right: 0;
+  height: 30px;
+  width: 30px;
+  z-index: 31;
+  cursor: se-resize;
+}
+.v-dashboard .v-dashboard-content .v-dashboard-widget .resize-overlay .resize-handle.resize-handle-sw {
+  bottom: 0;
+  left: 0;
+  height: 30px;
+  width: 30px;
+  z-index: 31;
+  cursor: sw-resize;
+}
+.v-dashboard .v-dashboard-content .v-dashboard-widget .v-dashboard-widget-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+.v-dashboard .v-dashboard-content .v-dashboard-widget .v-dashboard-widget-content > * {
+  overflow: auto;
+  background: white;
+}
+
+/*# sourceMappingURL=dashboard.css.map */
