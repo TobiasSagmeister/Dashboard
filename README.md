@@ -1,2 +1,1 @@
-# Dashboard
-Vaadin Dashboard (GWT)
+# Vaadin Dashboard (GWT)
